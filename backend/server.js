@@ -18,6 +18,7 @@ import connectDB from "./config/database.js";
 import authRoute from "./routes/authRoute.js";
 import productRoute from "./routes/productRoute.js";
 import userRoute from "./routes/userRoute.js";
+import paymentRoute from "./routes/paymentRoute.js";
 
 //rest object
 const app = express();
@@ -60,6 +61,7 @@ app.get("/", (req, res) => {
 app.use("/api/v1/auth", authRoute);
 app.use("/api/v1/product", productRoute);
 app.use("/api/v1/user", userRoute);
+app.use("/api/v1/payment", paymentRoute);
 
 // app.use("*", function (req, res) {
 //     res.sendFile(path.join(__dirname, "../client/dist/index.html"));

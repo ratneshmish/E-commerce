@@ -24,9 +24,11 @@ router.post("/update-wishlist", requireSignIn, updateWishlist);
 // get wishlist products
 router.get("/wishlist-products", requireSignIn, getWishlistProducts);
 
-// checkout session - stripe payment
-router.post("/create-checkout-session", createSession);
-router.post("/payment-success", requireSignIn, handleSuccess);
+// // checkout session - Razorpay
+// router.post("/create-order", requireSignIn, createSession);
+
+// // payment success - Razorpay
+// router.post("/payment-success", requireSignIn, handleSuccess);
 
 // get user orders
 router.get("/orders", requireSignIn, getOrders);
