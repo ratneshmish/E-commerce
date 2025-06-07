@@ -11,6 +11,12 @@ import Checkbox from "@mui/material/Checkbox";
 import SeoData from "../../SEO/SeoData";
 
 const Register = () => {
+
+
+         console.log("Server URL:", import.meta.env.VITE_SERVER_URL);
+
+
+
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [phone, setPhone] = useState("");
